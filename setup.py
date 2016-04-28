@@ -10,7 +10,7 @@ with open(os.path.join('docs', 'release-notes.rst')) as f:
     history = f.read()
 
 setup(
-    name="pykwalify",
+    name="pykwalify-unfixed",
     version="1.5.1",
     description='Python lib/cli for JSON/YAML schema validation',
     long_description=readme + '\n\n' + history,
@@ -27,9 +27,9 @@ setup(
         ],
     },
     install_requires=[
-        'docopt==0.6.2',
-        'PyYAML==3.11',
-        'python-dateutil==2.4.2',
+        'docopt',
+        'PyYAML',
+        'python-dateutil',
     ],
     classifiers=(
         # 'Development Status :: 1 - Planning',
